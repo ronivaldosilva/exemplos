@@ -1,0 +1,6 @@
+(texto as nullable text)=>
+let
+    Binario = Text.ToBinary(texto, 1251),
+    SemAcento = Text.FromBinary(Binario, TextEncoding.Utf8)
+in
+    SemAcento
